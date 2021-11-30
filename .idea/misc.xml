@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/gift.xml" value="0.36614583333333334" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/home.xml" value="0.36614583333333334" />
+        <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/order.xml" value="0.36614583333333334" />
+        <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/other.xml" value="0.36614583333333334" />
+        <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/pay.xml" value="0.36614583333333334" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/menu/bottom_menu.xml" value="0.36614583333333334" />
       </map>
     </option>
