@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/pay"
+        android:enabled="true"
+        android:icon="@drawable/payment"
+        android:title="Pay"/>
+    <item
+        android:id="@+id/order"
+        android:enabled="true"
+        android:icon="@drawable/order"
+        android:title="Order"/>
+    <item
+        android:id="@+id/gift"
+        android:enabled="true"
+        android:icon="@drawable/gift"
+        android:title="Gift"/>
+    <item
+        android:id="@+id/other"
+        android:enabled="true"
+        android:icon="@drawable/other"
+        android:title="Other"/>
+</menu>
