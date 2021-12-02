@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -20,7 +21,8 @@ class Other: Fragment() {
         binding = OtherBinding.inflate(layoutInflater)
 
         binding.ibSetting.setOnClickListener{
-            Toast.makeText(activity, "Click setting", Toast.LENGTH_SHORT).show()
+            // setting 버튼 눌렀을 때 SettingActivity로 이동
+            startActivity(Intent(activity, SettingActivity::class.java))
         }
 
         return binding.root;
