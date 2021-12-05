@@ -33,7 +33,9 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_other"
             app:layout_constraintStart_toStartOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -71,6 +73,303 @@
                 />
 
         </LinearLayout>
-    </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="계정정보"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="닉네임"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="올리비아"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightarrow"
+                android:layout_gravity="end|center"
+                android:layout_weight="0"
+                android:layout_marginRight="15dp"
+                android:background="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="개인컵 리워드 설정"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="에코 보너스 스타 적립"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightarrow"
+                android:layout_gravity="end|center"
+                android:layout_weight="0"
+                android:layout_marginRight="15dp"
+                android:background="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="My DT Pass"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightarrow"
+                android:layout_gravity="end|center"
+                android:layout_weight="0"
+                android:layout_marginRight="15dp"
+                android:background="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="연결된 서비스 관리"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightarrow"
+                android:layout_gravity="end|center"
+                android:layout_weight="0"
+                android:layout_marginRight="15dp"
+                android:background="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="임직원 번호 설정"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightarrow"
+                android:layout_gravity="end|center"
+                android:layout_weight="0"
+                android:layout_marginRight="15dp"
+                android:background="#fff"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="권한 설정"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="푸시 알림"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="프로모션/이벤트 알림 수신"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="Shake to pay 설정"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:text="위치 정보 서비스 이용약관 동의"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
