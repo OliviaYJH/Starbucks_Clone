@@ -6,10 +6,12 @@
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/drawable/gradient.xml" value="0.38229166666666664" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/drawable/other.xml" value="0.38229166666666664" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/drawable/round_border.xml" value="0.203125" />
+        <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/drawable/round_none_border.xml" value="0.22" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/activity_no_login_setting.xml" value="0.36614583333333334" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/activity_select_map.xml" value="0.3515625" />
-        <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/activity_setting.xml" value="0.2203125" />
+        <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/activity_setting.xml" value="0.33" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/gift.xml" value="0.36614583333333334" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/home.xml" value="0.33" />
         <entry key="..\:/RC_AOS/RC_2week/app/src/main/res/layout/order.xml" value="0.36614583333333334" />

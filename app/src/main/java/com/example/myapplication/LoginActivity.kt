@@ -11,6 +11,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
     private lateinit var sharedPreferences: SharedPreferences
+    companion object{ var autoLoginBtn = false}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,14 +19,24 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.cbAutologin.setOnCheckedChangeListener {buttonView, isChecked ->
+            if(isChecked){ autoLoginBtn = true }
+        }
+
         binding.btnLogin.setOnClickListener{
-            sharedPreferences = getSharedPreferences("check_login", MODE_PRIVATE)
-            val editor: SharedPreferences.Editor = sharedPreferences.edit()
-            editor.putBoolean("IsLogined", true) // 자동 로그인 상태됨
-            editor.commit()
-            
             startActivity(Intent(this, MainActivity::class.java))
             onDestroy() // 로그인하면 destory하기
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        // 자동 로그인 상태됨
+        if(autoLoginBtn){
+            sharedPreferences = getSharedPreferences("check_login", MODE_PRIVATE)
+            val editor: SharedPreferences.Editor = sharedPreferences.edit()
+            editor.putBoolean("IsLogined", true)
+            editor.commit()
         }
     }
 

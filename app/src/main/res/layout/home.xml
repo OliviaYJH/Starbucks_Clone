@@ -6,97 +6,107 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="185dp">
+        android:layout_height="match_parent">
 
-        <View
-            android:id="@+id/background_gradient"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="243dp"
-            android:background="@drawable/gradient"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp">
+
+            <View
+                android:id="@+id/background_gradient"
+                android:layout_width="match_parent"
+                android:layout_height="243dp"
+                android:background="@drawable/gradient"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="52dp"
+                android:text="편안한 밤 되세요"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:src="@drawable/whatisnew"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="What's New" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:src="@drawable/coupon"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Coupon" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:src="@drawable/alarm"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/winter_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/winter_frequency"
+            />
 
         <TextView
-            android:id="@+id/tv_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="52dp"
-            android:text="편안한 밤 되세요"
-            android:textColor="@color/black"
-            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="올리비아님을 위한 추천 메뉴"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#fff"
-            android:src="@drawable/whatisnew"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="What's New" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#fff"
-            android:src="@drawable/coupon"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Coupon" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#fff"
-            android:src="@drawable/alarm"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-
-    </LinearLayout>
-
-    <ImageView
-        android:layout_marginTop="5dp"
-        android:id="@+id/winter_frequency"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/winter_frequency"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="25dp"
-        android:text="올리비아님을 위한 추천 메뉴"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="18sp"/>
-
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
