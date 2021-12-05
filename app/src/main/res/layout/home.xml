@@ -106,7 +106,106 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="18sp"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <ImageView
+                            android:id="@+id/iv_latte"
+                            android:layout_width="140dp"
+                            android:layout_height="145dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/img_round"
+                            android:src="@drawable/latte" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="아이스 스타벅스\n     돌체 라떼"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/iv_frappuccino"
+                            android:layout_width="140dp"
+                            android:layout_height="145dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/img_round"
+                            android:src="@drawable/frappuccino" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="자바 칩 프라푸치노"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/iv_citron"
+                            android:layout_width="140dp"
+                            android:layout_height="145dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/img_round"
+                            android:src="@drawable/citron" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="아이스 유자\n 민트 티"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/iv_lime"
+                            android:layout_width="140dp"
+                            android:layout_height="145dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/img_round"
+                            android:src="@drawable/lime" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="쿨 라임 피지오"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
         </LinearLayout>
+
+
     </ScrollView>
 
 </LinearLayout>
