@@ -24,6 +24,7 @@ class GiftAdapter(context: Context, private val GiftCardArrayList:ArrayList<Gift
         binding.tvGiftSecond.text = GiftCardArrayList[p0].text2
         binding.ivGift.setImageResource(GiftCardArrayList[p0].Image)
 
+
         return binding.root
     }
 }

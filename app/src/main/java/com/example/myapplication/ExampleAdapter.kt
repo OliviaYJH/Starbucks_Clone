@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
+import org.w3c.dom.Text
 
 class ExampleAdapter(private val exampleList: List<Menu>): RecyclerView.Adapter<ExampleAdapter.ExampleViewHolder>() {
 
@@ -20,6 +21,7 @@ class ExampleAdapter(private val exampleList: List<Menu>): RecyclerView.Adapter<
         val currentItem = exampleList[position]
         holder.imageView.setImageResource(currentItem.Image)
         holder.textView.text = currentItem.title
+        holder.subTitle.text = currentItem.subtitle
     }
 
     override fun getItemCount() = exampleList.size
@@ -27,6 +29,7 @@ class ExampleAdapter(private val exampleList: List<Menu>): RecyclerView.Adapter<
     class ExampleViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val imageView: ImageView = itemView.findViewById(R.id.iv_order)
         val textView: TextView = itemView.findViewById(R.id.tv_menu_order)
+        val subTitle: TextView = itemView.findViewById(R.id.tv_english)
     }
 
 }

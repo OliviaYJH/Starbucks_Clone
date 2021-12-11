@@ -5,6 +5,8 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.SparseBooleanArray
+import android.view.LayoutInflater
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.core.util.isNotEmpty
 import com.example.myapplication.databinding.ActivitySettingBinding
@@ -35,6 +37,8 @@ class SettingActivity : AppCompatActivity() {
 
         customAdapter = CustomAdapter(this, businessCardArrayList)
         binding.listview.adapter = customAdapter
+
+
 
         
         binding.btnLogout.setOnClickListener{

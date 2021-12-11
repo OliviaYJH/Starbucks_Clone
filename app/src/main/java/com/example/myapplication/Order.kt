@@ -36,8 +36,6 @@ class Order: Fragment() {
         binding.recyclerView.setHasFixedSize(true)
 
 
-
-
         binding.tvPickstore.setOnClickListener{
             startActivity(Intent(activity, SelectMapActivity::class.java))
             Toast.makeText(activity, "다음", Toast.LENGTH_SHORT).show()
@@ -52,15 +50,15 @@ class Order: Fragment() {
 
         val list = ArrayList<Menu>()
 
-        list += Menu(R.drawable.menu_new, "New")
-        list += Menu(R.drawable.cold_brew, "추천")
-        list += Menu(R.drawable.reserve_expresso, "리저브 에스프레소")
-        list += Menu(R.drawable.reserve_drip, "리저브 드립")
-        list += Menu(R.drawable.latte, "콜드 브루")
-        list += Menu(R.drawable.espresso, "에스프레소")
-        list += Menu(R.drawable.frappuccino, "프라푸치노")
-        list += Menu(R.drawable.citron, "피지오")
-        list += Menu(R.drawable.lime, "티바나")
+        list += Menu(R.drawable.menu_new, "New", "")
+        list += Menu(R.drawable.cold_brew, "추천", "Recommend")
+        list += Menu(R.drawable.reserve_expresso, "리저브 에스프레소", "Reserve Espresso")
+        list += Menu(R.drawable.reserve_drip, "리저브 드립", "Reserve Drip")
+        list += Menu(R.drawable.latte, "콜드 브루", "Cold Brew")
+        list += Menu(R.drawable.espresso, "에스프레소", "Espresso")
+        list += Menu(R.drawable.frappuccino, "프라푸치노", "Frappuccino")
+        list += Menu(R.drawable.citron, "피지오", "Starbucks Fizzio")
+        list += Menu(R.drawable.lime, "티바나", "Teavana")
 
 
 
