@@ -37,12 +37,12 @@ class Order: Fragment() {
 
 
 
-        /*
+
         binding.tvPickstore.setOnClickListener{
             startActivity(Intent(activity, SelectMapActivity::class.java))
             Toast.makeText(activity, "다음", Toast.LENGTH_SHORT).show()
 
-        }*/
+        }
 
         return binding.root
     }
