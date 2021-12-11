@@ -163,6 +163,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <ImageView
                             android:id="@+id/iv_citron"
                             android:layout_width="140dp"
@@ -170,14 +171,16 @@
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/img_round"
                             android:src="@drawable/citron" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="아이스 유자\n 민트 티"
                             android:layout_gravity="center"
-                            android:textColor="@color/black"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginTop="5dp"
+                            android:text="아이스 유자\n 민트 티"
+                            android:textColor="@color/black" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -200,9 +203,7 @@
 
                 </LinearLayout>
             </HorizontalScrollView>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="70dp"/>
+
         </LinearLayout>
 
 

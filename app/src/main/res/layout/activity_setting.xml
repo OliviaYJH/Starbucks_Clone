@@ -35,10 +35,11 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:text="올리비아"
-                android:textSize="30dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
@@ -79,7 +80,7 @@
             android:layout_height="wrap_content"
             android:text="계정정보"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"/>
@@ -87,8 +88,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
             android:orientation="horizontal">
 
             <TextView
@@ -124,7 +125,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="25dp"
             android:orientation="horizontal">
 
             <TextView
@@ -160,7 +161,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="25dp"
             android:orientation="horizontal">
 
             <TextView
@@ -196,7 +197,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="25dp"
             android:orientation="horizontal">
 
             <TextView
@@ -226,7 +227,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -258,118 +259,17 @@
             android:layout_height="wrap_content"
             android:text="권한 설정"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"/>
 
-        <LinearLayout
+        <ListView
+            android:id="@+id/listview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal">
+            tools:listitem="@layout/listview_item" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textStyle="normal"
-                android:layout_marginLeft="20dp"
-                android:textSize="18sp"
-                android:text="푸시 알림"/>
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"/>
-
-            <androidx.appcompat.widget.SwitchCompat
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textStyle="normal"
-                android:layout_marginLeft="20dp"
-                android:textSize="18sp"
-                android:text="프로모션/이벤트 알림 수신"/>
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"/>
-
-            <androidx.appcompat.widget.SwitchCompat
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textStyle="normal"
-                android:layout_marginLeft="20dp"
-                android:textSize="18sp"
-                android:text="Shake to pay 설정"/>
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"/>
-
-            <androidx.appcompat.widget.SwitchCompat
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textStyle="normal"
-                android:layout_marginLeft="20dp"
-                android:textSize="18sp"
-                android:text="위치 정보 서비스 이용약관 동의"/>
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"/>
-
-            <androidx.appcompat.widget.SwitchCompat
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"/>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="70dp"/>
     </LinearLayout>
     </ScrollView>
 </LinearLayout>
